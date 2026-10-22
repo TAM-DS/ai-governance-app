@@ -25,7 +25,9 @@ The **AI Governance Helper for HR** translates the approach into a guided Stream
 
 ### See the AI Governance Helper
 
-The Streamlit home screen includes a guided workflow, tool-inventory metrics, and a clear starting point for HR teams. **Screenshot coming soon** as part of the updated Public Edition.
+![AI Governance Helper for HR — Streamlit home screen](docs/images/ai-governance-helper-hr.png)
+
+*Actual Streamlit interface, showing tool registration, risk assessment, owner assignment, summary metrics, and a guided starting point. Screenshot shows the original session-based prototype; the v1.1 upgrade is being prepared for release.*
 
 ## Built to use. Open to adapt.
 
