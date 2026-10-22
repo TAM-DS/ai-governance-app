@@ -21,15 +21,11 @@ AI adoption is not the same as AI governance. A policy alone cannot tell an orga
 
 The **AI Governance Helper for HR** translates the approach into a guided Streamlit experience so nontechnical teams can register tools, work through risk reviews, assign owners, and view a summary. **Today it is a session-based prototype, not a durable automated tracking system.** Persistent tracking, audit history, and expanded automation are planned engineering steps—not features claimed as complete.
 
-> **Public Edition — files being added:** The workbook and screenshot links below will work once their two files are uploaded to this repository.
-
-**[Download the Excel AI Governance Toolkit](AI_Governance_Toolkit_Updated_October_26.xlsx)**
+> **Updated Public Edition coming soon.** We're preparing the downloadable Excel workbook, app screenshots, and supporting materials for release. The existing Streamlit app remains a demonstration, with session-only data storage.
 
 ### See the AI Governance Helper
 
-![AI Governance Helper for HR — Streamlit prototype home screen](01-AI-Governance_App-HR-Teams.png)
-
-*Actual Streamlit home screen: six-step navigation, tool inventory metrics, and a guided getting-started workflow. Demonstration data is stored only in the current session.*
+The Streamlit home screen includes a guided workflow, tool-inventory metrics, and a clear starting point for HR teams. **Screenshot coming soon** as part of the updated Public Edition.
 
 ## The executive question
 
@@ -71,7 +67,7 @@ These are **documented methodology rules**, not blanket claims about features al
 
 ### 📊 Supporting toolkit and public documentation
 
-The [Excel Governance Toolkit](AI_Governance_Toolkit_Updated_October_26.xlsx) provides the structured foundation. The executive presentation and implementation guide will be linked here once their public editions are published. **The Excel and screenshot links require their corresponding uploaded files.**
+The Excel Governance Toolkit provides the structured foundation. **An updated downloadable Public Edition is coming soon**, together with an app screenshot, executive presentation, and implementation guide. Links will be added once the files are published.
 
 ## Who it's for
 
