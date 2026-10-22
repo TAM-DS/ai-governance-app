@@ -167,6 +167,20 @@ The goal is a **useful, approachable governance tool that improves through real-
 
 **Want to help shape it?** Open a [GitHub Issue](https://github.com/TAM-DS/ai-governance-app/issues) with a use case, bug report, accessibility improvement, or feature suggestion. Please do not post sensitive employee or client information.
 
+### Future enhancement: AI Spend & Value
+
+**AI governance should consider both risk and business value.** A future **AI Spend & Value** feature could help teams connect each registered AI tool to its cost, ownership, purpose, and measurable outcomes.
+
+| Field | Business question |
+|---|---|
+| **Monthly AI cost** | How much are we spending? |
+| **Business owner** | Who is accountable for the expense? |
+| **Business purpose** | What are we trying to accomplish? |
+| **Measurable outcome** | What improvement can we demonstrate? |
+| **Review decision** | Continue, optimize, expand, or retire? |
+
+**Status: proposed enhancement — not implemented.** This is a potential addition to the roadmap, subject to user feedback. The objective is to support more informed investment decisions, not simply enforce a flat spending cap.
+
 ## Before wider deployment
 
 Current engineering priorities:
