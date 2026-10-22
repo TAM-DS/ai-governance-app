@@ -27,6 +27,24 @@ The **AI Governance Helper for HR** translates the approach into a guided Stream
 
 The Streamlit home screen includes a guided workflow, tool-inventory metrics, and a clear starting point for HR teams. **Screenshot coming soon** as part of the updated Public Edition.
 
+## Built to use. Open to adapt.
+
+**No single governance workflow fits every organization. That's the point of making this open source.**
+
+Start with the working local application and the documented governance methodology. Then **clone or download the repository, change the questions, extend the workflow, integrate your systems, and tailor it to your own organization's policies and risk tolerance**.
+
+Different teams face different requirements:
+
+- **HR leaders** may prioritize hiring fairness, privacy, human review, and employee-impact controls.
+- **CTOs and AI platform teams** may focus on identity, access, integrations, reliability, and operational risk.
+- **CAIOs, risk, and compliance teams** may adapt assessment criteria, accountable roles, reporting, and review cadence.
+
+This project is a **starting point, not a one-size-fits-all mandate**. Its seven-category methodology is an example of a consistent baseline; adopting organizations must independently decide which additional assessments, controls, laws, or approvals apply to their use cases.
+
+**Make it yours:** [Browse the source](https://github.com/TAM-DS/ai-governance-app) · [Download ZIP](https://github.com/TAM-DS/ai-governance-app/archive/refs/heads/main.zip) · [Suggest an improvement](https://github.com/TAM-DS/ai-governance-app/issues)
+
+Released under the [MIT License](LICENSE): you can use, modify, and redistribute the software, including commercially, provided you follow the license terms. **Do not use actual confidential HR or client data in the current prototype**, and review security, privacy, and regulatory requirements before organizational deployment.
+
 ## The executive question
 
 Before giving another AI system access to a consequential workflow, can your organization answer these questions?
