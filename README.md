@@ -132,6 +132,21 @@ The broader methodology offers an illustrative phased rollout; real scope depend
 
 **Standards alignment** means the methodology can *support* governance activities; it is not a certification or regulatory determination.
 
+## Continuous improvement — release roadmap
+
+The goal is a **useful, approachable governance tool that improves through real-world feedback**, not a one-time demo or a promise of enterprise features that do not yet exist.
+
+| Stage | Focus | Status |
+|---|---|---|
+| **v1.0 · Streamlit prototype** | Register AI tools, assess risks, assign owners, and view a summary in a guided interface | Local prototype built; repository source upload pending |
+| **v1.1 · Practical usability upgrade** | Local SQLite persistence, stronger risk-completion checks, HIGH-risk visibility, and Responsible/Accountable validation | Upgrade prepared locally; **not yet merged or published** |
+| **Next · Community-informed improvements** | Excel import/export, clearer reporting, accessibility, and additional tests | Planned; priorities will respond to user feedback |
+| **Later · Multi-user capabilities** | Authentication, permissions, shared storage, and audit history | Exploratory; not part of the local release |
+
+**Engineering principle:** make the basic workflow dependable, validate the controls, and expand only when users have a demonstrated need. Public release notes will distinguish *implemented and tested*, *in progress*, and *planned*.
+
+**Want to help shape it?** Open a [GitHub Issue](https://github.com/TAM-DS/ai-governance-app/issues) with a use case, bug report, accessibility improvement, or feature suggestion. Please do not post sensitive employee or client information.
+
 ## Before wider deployment
 
 Current engineering priorities:
