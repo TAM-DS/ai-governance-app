@@ -100,7 +100,7 @@ This toolkit is **vendor-neutral** and does not require purchasing an enterprise
 
 ## Run the Streamlit prototype locally
 
-The Python app files are **not yet committed to this repository**. Once `app.py` and `requirements.txt` are uploaded, the local workflow is:
+**Repository source upload pending.** The v1.1 local release candidate has passed seven unit tests and a manual end-to-end workflow on a Mac, including persistence after restart. Once `app.py`, `governance_store.py`, `requirements.txt`, and `test_governance_store.py` are published, the clone-and-run instructions below will work:
 
 ```bash
 git clone https://github.com/TAM-DS/ai-governance-app.git
@@ -159,7 +159,7 @@ The goal is a **useful, approachable governance tool that improves through real-
 | Stage | Focus | Status |
 |---|---|---|
 | **v1.0 · Streamlit prototype** | Register AI tools, assess risks, assign owners, and view a summary in a guided interface | Local prototype built; repository source upload pending |
-| **v1.1 · Practical usability upgrade** | Local SQLite persistence, stronger risk-completion checks, HIGH-risk visibility, and Responsible/Accountable validation | Upgrade prepared locally; **not yet merged or published** |
+| **v1.1 · Practical usability upgrade** | Local SQLite persistence, stronger risk-completion checks, HIGH-risk visibility, and Responsible/Accountable validation | Updated release candidate verified locally; **source upload to GitHub pending** |
 | **Next · Community-informed improvements** | Excel import/export, clearer reporting, accessibility, and additional tests | Planned; priorities will respond to user feedback |
 | **Later · Multi-user capabilities** | Authentication, permissions, shared storage, and audit history | Exploratory; not part of the local release |
 
@@ -180,6 +180,18 @@ The goal is a **useful, approachable governance tool that improves through real-
 | **Review decision** | Continue, optimize, expand, or retire? |
 
 **Status: proposed enhancement — not implemented.** This is a potential addition to the roadmap, subject to user feedback. The objective is to support more informed investment decisions, not simply enforce a flat spending cap.
+
+### v1.1 usability improvements
+
+Based on hands-on testing, the updated local release candidate makes the assessment workflow clearer:
+
+- **Save Assessment / Save Draft:** saving an incomplete assessment is allowed and does not imply approval
+- **Visible completion requirements:** each of the seven categories needs a risk level, explanation, mitigation, named risk owner, and recorded date
+- **Persistent save feedback:** explicitly confirms whether an assessment was saved as a draft or completed
+- **Human scoring:** MEDIUM is an initial selection in the form, not an automatically determined risk
+- **Early HIGH flags:** a known HIGH risk remains visible even when supporting fields are incomplete
+
+**Verification:** seven automated tests passed and the user verified registration, risk scoring, RACI assignment, dashboard reporting, and persistence across a local application restart. This does not constitute a production security audit or independent compliance assessment. **The revised code has not yet been uploaded to this repository.**
 
 ## Before wider deployment
 
