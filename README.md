@@ -5,11 +5,11 @@
 
 AI adoption is not the same as AI governance. A policy alone cannot tell an organization which tools are in use, what information they process, where human approval is required, or who is accountable when something goes wrong.
 
-**AI Governance Toolkit** is a free, open-source, practical starting point for answering those questions—with a guided Streamlit prototype and an accompanying governance methodology.
+**AI Governance Toolkit** is a free, open-source starting point for answering those questions—with a working, local-first Streamlit application and an accompanying governance methodology.
 
-> **Public Edition · Prototype / work in progress**
+> **Public Edition · AI Governance Helper v1.1 available**
 >
-> Built for exploration, education, and demonstration. **Not a production-ready compliance or audit system.** Use synthetic records only. The app currently stores data in Streamlit session state, not in durable storage.
+> A working **local, single-user** application with SQLite persistence and tested governance rules. **Not a production-ready, multi-user compliance or audit system.** Use synthetic records only; do not enter real employee or confidential client information.
 
 ---
 
@@ -19,15 +19,15 @@ AI adoption is not the same as AI governance. A policy alone cannot tell an orga
 
 **For HR leaders, CTOs, CAIOs, and cross-functional risk owners:** the **AI Governance Excel Toolkit** helps establish the foundation—identify AI tools, structure risk assessments, assign accountability, and create a repeatable review process.
 
-The **AI Governance Helper for HR** translates the approach into a guided Streamlit experience so nontechnical teams can register tools, work through risk reviews, assign owners, and view a summary. **Today it is a session-based prototype, not a durable automated tracking system.** Persistent tracking, audit history, and expanded automation are planned engineering steps—not features claimed as complete.
+The **AI Governance Helper for HR** translates the approach into a guided Streamlit experience so nontechnical teams can register tools, work through risk reviews, assign owners, and view a summary. **Version 1.1 saves records locally in SQLite**, including after a restart. Shared access, tamper-resistant audit history, and advanced automation remain future work.
 
-> **Updated Public Edition coming soon.** We're preparing the downloadable Excel workbook, app screenshots, and supporting materials for release. The existing Streamlit app remains a demonstration, with session-only data storage.
+> **Available now:** clone the v1.1 Streamlit application and run it locally. **Coming soon:** an updated downloadable Excel Public Edition and additional supporting documentation.
 
 ### See the AI Governance Helper
 
 ![AI Governance Helper for HR — Streamlit home screen](docs/images/01-AI-Governance_App-HR-Teams.png)
 
-*Actual Streamlit interface, showing tool registration, risk assessment, owner assignment, summary metrics, and a guided starting point. Screenshot shows the original session-based prototype; the v1.1 upgrade is being prepared for release.*
+*Screenshot of the original Streamlit interface. The published v1.1 release retains the guided workflow and adds local persistence and stronger validation.*
 
 ## Built to use. Open to adapt.
 
@@ -45,7 +45,7 @@ This project is a **starting point, not a one-size-fits-all mandate**. Its seven
 
 **Make it yours:** [Browse the source](https://github.com/TAM-DS/ai-governance-app) · [Download ZIP](https://github.com/TAM-DS/ai-governance-app/archive/refs/heads/main.zip) · [Suggest an improvement](https://github.com/TAM-DS/ai-governance-app/issues)
 
-Released under the [MIT License](LICENSE): you can use, modify, and redistribute the software, including commercially, provided you follow the license terms. **Do not use actual confidential HR or client data in the current prototype**, and review security, privacy, and regulatory requirements before organizational deployment.
+Released under the [MIT License](LICENSE): you can use, modify, and redistribute the software, including commercially, provided you follow the license terms. **Do not use actual confidential HR or client data in the current local app**, and review security, privacy, and regulatory requirements before organizational deployment.
 
 ## The executive question
 
@@ -69,7 +69,7 @@ A friendly interface oriented toward nontechnical teams:
 
 `Home → Add a Tool → My Tools → Assess Risks → Assign Owners → Summary`
 
-The current app is a **session-based demonstration** of this workflow. Its calculations and enforcement of the complete methodology have **not yet been independently verified**.
+**Version 1.1 is available as a local, single-user app.** Seven automated tests passed, and the owner verified the registration → assessment → ownership → dashboard workflow and persistence across restart. This is not independent certification or production security verification.
 
 ### 📘 Governance methodology
 
@@ -98,9 +98,9 @@ The Excel Governance Toolkit provides the structured foundation. **An updated do
 
 This toolkit is **vendor-neutral** and does not require purchasing an enterprise governance platform to explore the methodology.
 
-## Run the Streamlit prototype locally
+## Run AI Governance Helper v1.1 locally
 
-**Repository source upload pending.** The v1.1 local release candidate has passed seven unit tests and a manual end-to-end workflow on a Mac, including persistence after restart. Once `app.py`, `governance_store.py`, `requirements.txt`, and `test_governance_store.py` are published, the clone-and-run instructions below will work:
+**The application source, dependencies, and tests are published in this repository.** The following commands clone and run the local v1.1 application:
 
 ```bash
 git clone https://github.com/TAM-DS/ai-governance-app.git
@@ -124,7 +124,7 @@ Use entirely fictional names and synthetic data:
 2. Consider the risk of incorrect rejection, bias, personal-data exposure, and security failures.
 3. Record the mitigation and who must review decisions before any action is taken.
 4. Assign a named accountable owner and examine the summary.
-5. Restart the session to observe the prototype's current persistence limitation.
+5. Stop and restart Streamlit, then confirm the saved tool, assessment, and owners remain available from the local SQLite database.
 
 **Important:** An AI-generated recommendation to reject a candidate is **not authorization** to do so. Actual employment-related use requires appropriate human review, legal analysis, technical validation, and organizational controls.
 
@@ -158,8 +158,8 @@ The goal is a **useful, approachable governance tool that improves through real-
 
 | Stage | Focus | Status |
 |---|---|---|
-| **v1.0 · Streamlit prototype** | Register AI tools, assess risks, assign owners, and view a summary in a guided interface | Local prototype built; repository source upload pending |
-| **v1.1 · Practical usability upgrade** | Local SQLite persistence, stronger risk-completion checks, HIGH-risk visibility, and Responsible/Accountable validation | Updated release candidate verified locally; **source upload to GitHub pending** |
+| **v1.0 · Streamlit prototype** | Register AI tools, assess risks, assign owners, and view a summary in a guided interface | Initial local prototype |
+| **v1.1 · Practical usability upgrade** | Local SQLite persistence, stronger risk-completion checks, HIGH-risk visibility, and Responsible/Accountable validation | **Released — code and tests available** |
 | **Next · Community-informed improvements** | Excel import/export, clearer reporting, accessibility, and additional tests | Planned; priorities will respond to user feedback |
 | **Later · Multi-user capabilities** | Authentication, permissions, shared storage, and audit history | Exploratory; not part of the local release |
 
@@ -183,7 +183,7 @@ The goal is a **useful, approachable governance tool that improves through real-
 
 ### v1.1 usability improvements
 
-Based on hands-on testing, the updated local release candidate makes the assessment workflow clearer:
+Based on hands-on testing, v1.1 makes the assessment workflow clearer:
 
 - **Save Assessment / Save Draft:** saving an incomplete assessment is allowed and does not imply approval
 - **Visible completion requirements:** each of the seven categories needs a risk level, explanation, mitigation, named risk owner, and recorded date
@@ -191,7 +191,7 @@ Based on hands-on testing, the updated local release candidate makes the assessm
 - **Human scoring:** MEDIUM is an initial selection in the form, not an automatically determined risk
 - **Early HIGH flags:** a known HIGH risk remains visible even when supporting fields are incomplete
 
-**Verification:** seven automated tests passed and the user verified registration, risk scoring, RACI assignment, dashboard reporting, and persistence across a local application restart. This does not constitute a production security audit or independent compliance assessment. **The revised code has not yet been uploaded to this repository.**
+**Verification:** seven automated tests passed and the user verified registration, risk scoring, RACI assignment, dashboard reporting, and persistence across a local application restart. This does not constitute a production security audit or independent compliance assessment. **The validated v1.1 source and tests are now published in this repository.**
 
 ## Before wider deployment
 
