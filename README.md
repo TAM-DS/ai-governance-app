@@ -218,7 +218,7 @@ Start with the workflow. Make decisions explicit. Preserve human authority. Docu
 ---
 
 **Created by Tracy Anne Griffin Manning**  
-AI Platform Engineer | Enterprise Cloud Architecture | AI Strategy & Consulting  
+AI Architect | Enterprise Cloud Architecture | AI Strategy & Consulting  
 [Professional site](https://tam-ds.github.io/) · [LinkedIn](https://www.linkedin.com/in/tracymanning/) · [GitHub](https://github.com/TAM-DS)
 
 **License:** [MIT](LICENSE). Free to use, modify, and share under the license terms.
